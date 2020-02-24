@@ -1,15 +1,19 @@
-import React from 'react';
+import React from "react";
 
-function Header() {
+function Header(name = "Fabio") {
   return (
-    <h1>Welcome to Codaisseur</h1>
-  )
+    <div>
+      <h1>Welcome to Codaisseur</h1>
+      <h2>My name is {name}</h2>
+      <p>Dit is een beetje raar</p>
+    </div>
+  );
 }
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header name="Biagio" />
     </div>
   );
 }
